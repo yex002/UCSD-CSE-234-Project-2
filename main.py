@@ -143,6 +143,7 @@ def predict_schema_links(model, tokenizer, question, db_id, schemas_dir):
         messages,
         tokenize=False,
         add_generation_prompt=True,
+        enable_thinking=False,   # for Qwen-1.7B
     )
 
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
@@ -168,7 +169,7 @@ def main():
     ap.add_argument("--output", required=True)
     ap.add_argument("--schemas_dir", default="./schemas")
     ap.add_argument("--model_dir", default="./best_model")
-    ap.add_argument("--base_model", default="Qwen/Qwen2.5-0.5B-Instruct")
+    ap.add_argument("--base_model", default="Qwen/Qwen3-1.7B")
     args = ap.parse_args()
 
     model, tokenizer = load_model(args.model_dir, args.base_model)
