@@ -1,0 +1,10 @@
+2026-05-25 01:57:13 | schema-linking-baseline-qwen-lora_4 | worker_0 | INFO | worker.py:644 | {'train_runtime': 6.062, 'train_samples_per_second': 10.557, 'train_steps_per_second': 0.33, 'train_loss': 2.2578001022338867, 'num_tokens': 57802.0, 'mean_token_accuracy': 0.6068002693355083, 'epoch': 1.0}
+
+2026-05-25 01:57:13 | schema-linking-baseline-qwen-lora_4 | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/64 [00:00<?, ? examples/s]Map: 100%|██████████| 64/64 [00:00<00:00, 1161.71 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 2653.97 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 2569.79 examples/s]
+Tokenizing train dataset:   0%|          | 0/64 [00:00<?, ? examples/s]Tokenizing train dataset:  19%|█▉        | 12/64 [00:00<00:00, 107.32 examples/s]Tokenizing train dataset:  44%|████▍     | 28/64 [00:00<00:00, 130.05 examples/s]Tokenizing train dataset:  86%|████████▌ | 55/64 [00:00<00:00, 186.43 examples/s]Tokenizing train dataset: 100%|██████████| 64/64 [00:00<00:00, 143.59 examples/s]
+Truncating train dataset:   0%|          | 0/64 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 64/64 [00:00<00:00, 1805.58 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  13%|█▎        | 13/101 [00:00<00:00, 115.85 examples/s]Tokenizing eval dataset:  30%|██▉       | 30/101 [00:00<00:00, 142.68 examples/s]Tokenizing eval dataset:  48%|████▊     | 48/101 [00:00<00:00, 148.67 examples/s]Tokenizing eval dataset:  71%|███████▏  | 72/101 [00:00<00:00, 177.16 examples/s]Tokenizing eval dataset:  91%|█████████ | 92/101 [00:00<00:00, 178.58 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 143.48 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 4025.05 examples/s]
+
