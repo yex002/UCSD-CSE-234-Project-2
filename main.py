@@ -22,6 +22,7 @@ Rules:
 """
 
 
+# read DB
 def schema_file_for_db(db_id, schemas_dir):
     return Path(schemas_dir) / (db_id.replace(" ", "_").replace("/", "_") + ".json")
 
@@ -40,7 +41,7 @@ def load_schema(db_id, schemas_dir):
 
     return schema
 
-
+# serialize
 def serialize_schema(db_id, schemas_dir):
     schema = load_schema(db_id, schemas_dir)
     lines = [f"Database: {db_id}", "Schema:"]
@@ -48,7 +49,7 @@ def serialize_schema(db_id, schemas_dir):
         lines.append(f"- {table}({', '.join(cols)})")
     return "\n".join(lines)
 
-
+# prompt construction
 def build_messages(question, db_id, schemas_dir):
     user_prompt = f"""{serialize_schema(db_id, schemas_dir)}
 
@@ -68,7 +69,7 @@ def extract_json_object(text):
     text = re.sub(r"```$", "", text).strip()
 
     try:
-        obj = json.loads(text)
+        obj = json.loads(text) # try to parse to json
         return obj if isinstance(obj, dict) else {}
     except Exception:
         pass
@@ -84,6 +85,7 @@ def extract_json_object(text):
         return {}
 
 
+# post process
 def canonicalize_links(raw_links, db_id, schemas_dir):
     schema = load_schema(db_id, schemas_dir)
     table_map = {t.lower(): t for t in schema}
@@ -127,7 +129,7 @@ def load_model(model_dir, base_model):
     model_dir = Path(model_dir)
     if (model_dir / "adapter_config.json").exists():
         print("adapter_config.json exists.....")
-        model = PeftModel.from_pretrained(base, model_dir)
+        model = PeftModel.from_pretrained(base, model_dir) # load pretrained model
     else:
         model = base
 
