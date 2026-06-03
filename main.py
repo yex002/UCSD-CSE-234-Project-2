@@ -168,7 +168,7 @@ def main():
     ap.add_argument("--input", required=True)
     ap.add_argument("--output", required=True)
     ap.add_argument("--schemas_dir", default="./schemas")
-    ap.add_argument("--model_dir", default="./best_model")
+    ap.add_argument("--model_dir", default="./checkpoint")
     ap.add_argument("--base_model", default="Qwen/Qwen3-1.7B")
     args = ap.parse_args()
 

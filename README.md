@@ -19,7 +19,7 @@ Additional flags: `--schemas_dir`, `--model_dir`, `--base_model`
 
 
 ### Model and adapter configuration path
-`adapter_config.json`, `adapter_model.satetensors`, `optimizer.pt`, `scheduler.pt`, `trainer_state.json` are in the folder `best_model`. The `main.py` will call the adapter configuration and model parameters in this folder automatically. 
+`adapter_config.json`, `adapter_model.satetensors`, `optimizer.pt`, `scheduler.pt`, `trainer_state.json` are in the folder `checkpoint`. The `main.py` will call the adapter configuration and model parameters in this folder automatically. 
 
 
 
