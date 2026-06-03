@@ -1,0 +1,192 @@
+2026-05-28 23:48:14 | schema-linking-baseline-qwen-lora_12 | experiment | INFO | experiment.py:104 | The previously running experiment schema-linking-baseline-qwen-lora_11 was forcibly ended. Created a new experiment 'schema-linking-baseline-qwen-lora_12' with Experiment ID: 14 and Metric Experiment ID: 86 at /home/duw003/rapidfireai/rapidfire_experiments/schema-linking-baseline-qwen-lora_12
+2026-05-28 23:48:14 | schema-linking-baseline-qwen-lora_12 | experiment | INFO | experiment.py:106 | Running RapidFire AI version 0.15.2
+2026-05-28 23:48:28 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:67 | Found 1 workers/GPUs.
+2026-05-28 23:48:28 | schema-linking-baseline-qwen-lora_12 | controller | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-28 23:48:28 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:95 | Controller initialized
+2026-05-28 23:48:28 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:594 | Set experiment task to Create Models.
+2026-05-28 23:48:28 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:607 | Saved datasets to /home/duw003/rapidfireai/rapidfire_experiments/schema-linking-baseline-qwen-lora_12/datasets.dill
+2026-05-28 23:48:28 | schema-linking-baseline-qwen-lora_12 | controller | INFO | controller.py:613 | Set seed to 42
+2026-05-28 23:48:28 | schema-linking-baseline-qwen-lora_12 | controller | INFO | metric_rfmetric_manager.py:141 | Created MLflow run: 6a8430ce075744b795ee4654aa334e64, 1
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:200 | Populated MetricLogger with model config info for run 1.
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | INFO | controller.py:220 | Created 1 runs - 
+{   1: {   'additional_kwargs.generation_config.do_sample': False,
+           'additional_kwargs.generation_config.max_new_tokens': 256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.02,
+           'additional_kwargs.generation_config.temperature': None,
+           'additional_kwargs.generation_config.top_p': None,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'Qwen/Qwen3-1.7B',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 32,
+           'peft_params.lora_dropout': 0.05,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['q_proj', 'k_proj', 'v_proj', 'o_proj'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.bf16': True,
+           'training_args.eval_steps': 50,
+           'training_args.eval_strategy': 'steps',
+           'training_args.gradient_accumulation_steps': 8,
+           'training_args.learning_rate': 0.0001,
+           'training_args.logging_steps': 5,
+           'training_args.lr_scheduler_type': 'cosine',
+           'training_args.num_train_epochs': 3,
+           'training_args.per_device_eval_batch_size': 1,
+           'training_args.per_device_train_batch_size': 1,
+           'training_args.save_steps': 100}}
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:223 | Got 1 runs for Initial.
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:227 | Completed creating models.
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:625 | Created models.
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:631 | Set experiment task to Training and Validation.
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:115 | Creating 1 worker processes...
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:121 | Starting worker processes in process group 1793
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:149 | Started Worker 0 with PID 5835
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | worker_manager | INFO | worker_manager.py:156 | Started 1 worker processes successfully
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:637 | Created 1 workers.
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | INFO | controller.py:659 | Starting Training and Validation
+2026-05-28 23:48:29 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-28 23:48:46 | schema-linking-baseline-qwen-lora_12 | worker_0 | DEBUG | worker.py:157 | Worker 0 initialized with PID 5835
+2026-05-28 23:48:46 | schema-linking-baseline-qwen-lora_12 | worker_0 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-28 23:48:47 | schema-linking-baseline-qwen-lora_12 | worker_0 | DEBUG | worker.py:192 | Loaded datasets
+2026-05-28 23:48:47 | schema-linking-baseline-qwen-lora_12 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-28 23:48:47 | schema-linking-baseline-qwen-lora_12 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-28 23:49:12 | schema-linking-baseline-qwen-lora_12 | worker-0-shm | DEBUG | shm_manager.py:348 | Saved base_model for run Qwen/Qwen3-1.7B
+2026-05-28 23:49:13 | schema-linking-baseline-qwen-lora_12 | worker_0 | ERROR | worker.py:524 | Error during training for run 1: name 'tokenizer' is not defined
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | worker_0 | ERROR | worker.py:683 | Error while running run_fit for run 1 and chunk 0: name 'tokenizer' is not defined
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 3
+               │     └ 143
+               └ <function _main at 0x7f8d2da1ee80>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 3
+           │    └ <function BaseProcess._bootstrap at 0x7f8d2db0d1c0>
+           └ <Process name='Process-8' parent=1793 started>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f8d2db0c720>
+    └ <Process name='Process-8' parent=1793 started>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Process name='Process-8' parent=1793 started>
+    │    │        │    └ (0, <DictProxy object, typeid 'dict' at 0x7f8abed641d0>, <AcquirerProxy object, typeid 'Lock' at 0x7f8abc6980e0>, <Event at 0...
+    │    │        └ <Process name='Process-8' parent=1793 started>
+    │    └ <function worker_process_target at 0x7f8cdd162700>
+    └ <Process name='Process-8' parent=1793 started>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/utils/worker_manager.py", line 44, in worker_process_target
+    worker.serve_forever()
+    │      └ <function Worker.serve_forever at 0x7f8a98b00360>
+    └ <rapidfireai.fit.backend.worker.Worker object at 0x7f8d2da03650>
+> File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 676, in serve_forever
+    self.run_fit(
+    │    └ <function Worker.run_fit at 0x7f8a98b002c0>
+    └ <rapidfireai.fit.backend.worker.Worker object at 0x7f8d2da03650>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 354, in run_fit
+    trainer_instance, base_model_name = create_trainer_instance(
+                                        └ <function create_trainer_instance at 0x7f8ac1a34180>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 425, in create_trainer_instance
+    _prepare_trainer_kwargs(
+    └ <function _prepare_trainer_kwargs at 0x7f8abecabe20>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 662, in _prepare_trainer_kwargs
+    train_dataset = train_dataset.map(
+                    │             └ <function Dataset.map at 0x7f8ac46877e0>
+                    └ Dataset({
+                          features: ['question_id', 'db_id', 'question', 'gold_sql', 'schema_links', 'user_prompt', 'assistant_response']...
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 575, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+         │                                 │    │      │       └ {}
+         │                                 │    │      └ (<function formatting_function at 0x7f8a98b03a60>,)
+         │                                 │    └ Dataset({
+         │                                 │          features: ['question_id', 'db_id', 'question', 'gold_sql', 'schema_links', 'user_prompt', 'assistant_response']...
+         │                                 └ <function Dataset.map at 0x7f8ac4687740>
+         └ typing.Union
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3633, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+        │     │     │          │       │             └ {'shard': Dataset({
+        │     │     │          │       │                   features: ['question_id', 'db_id', 'question', 'gold_sql', 'schema_links', 'user_prompt', 'assistant_...
+        │     │     │          │       └ <staticmethod(<function Dataset._map_single at 0x7f8ac4687880>)>
+        │     │     │          └ <class 'datasets.arrow_dataset.Dataset'>
+        │     │     └ 0
+        │     └ False
+        └ None
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3973, in _map_single
+    for i, example in iter_outputs(shard_iterable):
+                      │            └ <enumerate object at 0x7f8864651080>
+                      └ <function Dataset._map_single.<locals>.iter_outputs at 0x7f88647deac0>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3951, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+          │  │              │        │         └ 0
+          │  │              │        └ 0
+          │  │              └ pyarrow.Table
+          │  │                question_id: int64
+          │  │                db_id: string
+          │  │                question: string
+          │  │                gold_sql: string
+          │  │                schema_links: struct<ACC_EM_Chronic_Absentee...
+          │  └ <function Dataset._map_single.<locals>.apply_function at 0x7f88647deca0>
+          └ 0
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3872, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       │         │         │                  └ {}
+                       │         │         └ ()
+                       │         └ [{'question_id': 127, 'db_id': 'ATBI', 'question': 'How many events recorded seedling density data?', 'gold_sql': 'select cou...
+                       └ <function formatting_function at 0x7f8a98b03a60>
+
+  File "/tmp/ipykernel_1793/1465439947.py", line 33, in formatting_function
+
+NameError: name 'tokenizer' is not defined
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | controller-shm | WARNING | shm_manager.py:492 | Model '1' not found in shared memory during delete
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | controller | ERROR | controller.py:788 | Run 1 has failed: name 'tokenizer' is not definedTraceback (most recent call last):
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 676, in serve_forever
+    self.run_fit(
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 354, in run_fit
+    trainer_instance, base_model_name = create_trainer_instance(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 425, in create_trainer_instance
+    _prepare_trainer_kwargs(
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 662, in _prepare_trainer_kwargs
+    train_dataset = train_dataset.map(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 575, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3633, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3973, in _map_single
+    for i, example in iter_outputs(shard_iterable):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3951, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3872, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_1793/1465439947.py", line 33, in formatting_function
+NameError: name 'tokenizer' is not defined
+
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:789 | Removed run 1 from scheduler
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | controller | INFO | controller.py:848 | Scheduler indicates all runs have completed all chunks
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | controller | DEBUG | controller.py:904 | Set experiment task to Idle.
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-28 23:49:14 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-28 23:49:15 | schema-linking-baseline-qwen-lora_12 | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-28 23:49:15 | schema-linking-baseline-qwen-lora_12 | worker_0 | INFO | worker_manager.py:50 | Worker 0 process exiting
+2026-05-28 23:49:15 | schema-linking-baseline-qwen-lora_12 | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-28 23:49:17 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-28 23:49:17 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-28 23:49:17 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-28 23:49:17 | schema-linking-baseline-qwen-lora_12 | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-28 23:55:51 | schema-linking-baseline-qwen-lora_12 | schema-linking-baseline-qwen-lora_12 | DEBUG | experiment_utils.py:271 | Reset experiment states and set current experiment task to idle
+2026-05-29 09:14:41 | schema-linking-baseline-qwen-lora_12 | schema-linking-baseline-qwen-lora_12 | DEBUG | experiment_utils.py:271 | Reset experiment states and set current experiment task to idle
+2026-05-29 09:14:41 | schema-linking-baseline-qwen-lora_12 | schema-linking-baseline-qwen-lora_12 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 09:14:41 | schema-linking-baseline-qwen-lora_12 | schema-linking-baseline-qwen-lora_12 | INFO | metric_mlflow_manager.py:133 | No active MLflow run to clear
+2026-05-29 09:14:41 | schema-linking-baseline-qwen-lora_12 | schema-linking-baseline-qwen-lora_12 | INFO | experiment_utils.py:240 | Experiment schema-linking-baseline-qwen-lora_12 ended

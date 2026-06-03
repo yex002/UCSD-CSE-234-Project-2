@@ -1,0 +1,75 @@
+2026-05-22 22:37:45 | schema-linking-baseline-qwen-lora | worker_0 | INFO | worker.py:644 | {'loss': 1.1492, 'grad_norm': 2.69284987449646, 'learning_rate': 0.00019939306773179497, 'num_tokens': 35538.0, 'mean_token_accuracy': 0.3451668068766594, 'epoch': 0.5555555555555556}
+{'train_runtime': 14.9078, 'train_samples_per_second': 4.83, 'train_steps_per_second': 0.604, 'train_loss': 0.8314763307571411, 'num_tokens': 65508.0, 'mean_token_accuracy': 0.37914642691612244, 'epoch': 1.0}
+
+2026-05-22 22:37:45 | schema-linking-baseline-qwen-lora | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/72 [00:00<?, ? examples/s]Map: 100%|██████████| 72/72 [00:00<00:00, 1526.23 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3294.64 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3219.35 examples/s]
+Tokenizing train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Tokenizing train dataset:  21%|██        | 15/72 [00:00<00:00, 128.80 examples/s]Tokenizing train dataset:  54%|█████▍    | 39/72 [00:00<00:00, 186.79 examples/s]Tokenizing train dataset:  94%|█████████▍| 68/72 [00:00<00:00, 229.42 examples/s]Tokenizing train dataset: 100%|██████████| 72/72 [00:00<00:00, 173.31 examples/s]
+Truncating train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 72/72 [00:00<00:00, 2570.39 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  17%|█▋        | 17/101 [00:00<00:00, 158.82 examples/s]Tokenizing eval dataset:  37%|███▋      | 37/101 [00:00<00:00, 174.60 examples/s]Tokenizing eval dataset:  61%|██████▏   | 62/101 [00:00<00:00, 195.74 examples/s]Tokenizing eval dataset:  83%|████████▎ | 84/101 [00:00<00:00, 201.80 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 172.77 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 5639.61 examples/s]
+
+2026-05-22 22:40:42 | schema-linking-baseline-qwen-lora | worker_0 | INFO | worker.py:644 | {'train_runtime': 9.1309, 'train_samples_per_second': 7.009, 'train_steps_per_second': 0.219, 'train_loss': 2.025023937225342, 'num_tokens': 57802.0, 'mean_token_accuracy': 0.6399557068943977, 'epoch': 1.0}
+
+2026-05-22 22:40:42 | schema-linking-baseline-qwen-lora | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/64 [00:00<?, ? examples/s]Map: 100%|██████████| 64/64 [00:00<00:00, 1413.26 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3139.22 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3191.22 examples/s]
+Tokenizing train dataset:   0%|          | 0/64 [00:00<?, ? examples/s]Tokenizing train dataset:  23%|██▎       | 15/64 [00:00<00:00, 135.06 examples/s]Tokenizing train dataset:  58%|█████▊    | 37/64 [00:00<00:00, 179.34 examples/s]Tokenizing train dataset: 100%|██████████| 64/64 [00:00<00:00, 174.39 examples/s]Tokenizing train dataset: 100%|██████████| 64/64 [00:00<00:00, 165.07 examples/s]
+Truncating train dataset:   0%|          | 0/64 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 64/64 [00:00<00:00, 2105.23 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  16%|█▌        | 16/101 [00:00<00:00, 150.22 examples/s]Tokenizing eval dataset:  36%|███▌      | 36/101 [00:00<00:00, 166.81 examples/s]Tokenizing eval dataset:  55%|█████▌    | 56/101 [00:00<00:00, 179.53 examples/s]Tokenizing eval dataset:  77%|███████▋  | 78/101 [00:00<00:00, 191.39 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 162.10 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 165.02 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 4931.26 examples/s]
+
+2026-05-22 22:41:29 | schema-linking-baseline-qwen-lora | worker_0 | INFO | worker.py:644 | {'loss': 1.6734, 'grad_norm': 7.712846755981445, 'learning_rate': 0.0004991461232516675, 'num_tokens': 35538.0, 'mean_token_accuracy': 0.3078289031982422, 'epoch': 0.5555555555555556}
+{'train_runtime': 7.4399, 'train_samples_per_second': 9.678, 'train_steps_per_second': 1.21, 'train_loss': 1.303490850660536, 'num_tokens': 65508.0, 'mean_token_accuracy': 0.32483429461717606, 'epoch': 1.0}
+
+2026-05-22 22:41:29 | schema-linking-baseline-qwen-lora | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/72 [00:00<?, ? examples/s]Map: 100%|██████████| 72/72 [00:00<00:00, 1463.62 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3078.24 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3072.79 examples/s]
+Tokenizing train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Tokenizing train dataset:  19%|█▉        | 14/72 [00:00<00:00, 128.93 examples/s]Tokenizing train dataset:  42%|████▏     | 30/72 [00:00<00:00, 142.73 examples/s]Tokenizing train dataset:  81%|████████  | 58/72 [00:00<00:00, 197.07 examples/s]Tokenizing train dataset: 100%|██████████| 72/72 [00:00<00:00, 156.09 examples/s]
+Truncating train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 72/72 [00:00<00:00, 2531.69 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  15%|█▍        | 15/101 [00:00<00:00, 136.93 examples/s]Tokenizing eval dataset:  33%|███▎      | 33/101 [00:00<00:00, 146.38 examples/s]Tokenizing eval dataset:  51%|█████▏    | 52/101 [00:00<00:00, 164.39 examples/s]Tokenizing eval dataset:  74%|███████▍  | 75/101 [00:00<00:00, 182.27 examples/s]Tokenizing eval dataset:  95%|█████████▌| 96/101 [00:00<00:00, 188.62 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 152.93 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 5487.79 examples/s]
+
+2026-05-22 22:43:44 | schema-linking-baseline-qwen-lora | worker_0 | INFO | worker.py:644 | {'loss': 1.2883, 'grad_norm': 4.97121000289917, 'learning_rate': 0.0004991461232516675, 'num_tokens': 35538.0, 'mean_token_accuracy': 0.34129931777715683, 'epoch': 0.5555555555555556}
+{'train_runtime': 8.225, 'train_samples_per_second': 8.754, 'train_steps_per_second': 1.094, 'train_loss': 1.0045825640360515, 'num_tokens': 65508.0, 'mean_token_accuracy': 0.3451283536851406, 'epoch': 1.0}
+
+2026-05-22 22:43:44 | schema-linking-baseline-qwen-lora | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/72 [00:00<?, ? examples/s]Map: 100%|██████████| 72/72 [00:00<00:00, 1400.71 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3069.12 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3055.99 examples/s]
+Tokenizing train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Tokenizing train dataset:  19%|█▉        | 14/72 [00:00<00:00, 128.42 examples/s]Tokenizing train dataset:  40%|████      | 29/72 [00:00<00:00, 139.30 examples/s]Tokenizing train dataset:  79%|███████▉  | 57/72 [00:00<00:00, 196.26 examples/s]Tokenizing train dataset: 100%|██████████| 72/72 [00:00<00:00, 155.56 examples/s]
+Truncating train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 72/72 [00:00<00:00, 2534.09 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  14%|█▍        | 14/101 [00:00<00:00, 127.43 examples/s]Tokenizing eval dataset:  31%|███       | 31/101 [00:00<00:00, 148.47 examples/s]Tokenizing eval dataset:  48%|████▊     | 48/101 [00:00<00:00, 150.48 examples/s]Tokenizing eval dataset:  71%|███████▏  | 72/101 [00:00<00:00, 178.07 examples/s]Tokenizing eval dataset:  89%|████████▉ | 90/101 [00:00<00:00, 176.21 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 147.27 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 5431.09 examples/s]
+
+2026-05-22 22:46:36 | schema-linking-baseline-qwen-lora | worker_0 | INFO | worker.py:644 | {'loss': 1.4263, 'grad_norm': 5.077020645141602, 'learning_rate': 9.969653386589748e-05, 'num_tokens': 35538.0, 'mean_token_accuracy': 0.3224516332149506, 'epoch': 0.5555555555555556}
+{'train_runtime': 14.7703, 'train_samples_per_second': 4.875, 'train_steps_per_second': 0.609, 'train_loss': 1.0267301665412054, 'num_tokens': 65508.0, 'mean_token_accuracy': 0.3680827021598816, 'epoch': 1.0}
+
+2026-05-22 22:46:36 | schema-linking-baseline-qwen-lora | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/72 [00:00<?, ? examples/s]Map: 100%|██████████| 72/72 [00:00<00:00, 1460.60 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3004.45 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3011.11 examples/s]
+Tokenizing train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Tokenizing train dataset:  18%|█▊        | 13/72 [00:00<00:00, 117.44 examples/s]Tokenizing train dataset:  40%|████      | 29/72 [00:00<00:00, 135.66 examples/s]Tokenizing train dataset:  79%|███████▉  | 57/72 [00:00<00:00, 191.72 examples/s]Tokenizing train dataset: 100%|██████████| 72/72 [00:00<00:00, 152.30 examples/s]
+Truncating train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 72/72 [00:00<00:00, 2331.10 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  14%|█▍        | 14/101 [00:00<00:00, 128.28 examples/s]Tokenizing eval dataset:  31%|███       | 31/101 [00:00<00:00, 151.16 examples/s]Tokenizing eval dataset:  48%|████▊     | 48/101 [00:00<00:00, 153.59 examples/s]Tokenizing eval dataset:  71%|███████▏  | 72/101 [00:00<00:00, 182.60 examples/s]Tokenizing eval dataset:  90%|█████████ | 91/101 [00:00<00:00, 182.96 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 149.91 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 5320.98 examples/s]
+
+2026-05-22 22:48:29 | schema-linking-baseline-qwen-lora | worker_0 | INFO | worker.py:644 | {'loss': 1.7497, 'grad_norm': 4.729754447937012, 'learning_rate': 9.969653386589748e-05, 'num_tokens': 35538.0, 'mean_token_accuracy': 0.29838161170482635, 'epoch': 0.5555555555555556}
+{'train_runtime': 13.4784, 'train_samples_per_second': 5.342, 'train_steps_per_second': 0.668, 'train_loss': 1.4147139920128717, 'num_tokens': 65508.0, 'mean_token_accuracy': 0.33484032563865185, 'epoch': 1.0}
+
+2026-05-22 22:48:29 | schema-linking-baseline-qwen-lora | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/72 [00:00<?, ? examples/s]Map: 100%|██████████| 72/72 [00:00<00:00, 1520.50 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3094.07 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 2981.26 examples/s]
+Tokenizing train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Tokenizing train dataset:  19%|█▉        | 14/72 [00:00<00:00, 126.14 examples/s]Tokenizing train dataset:  40%|████      | 29/72 [00:00<00:00, 137.41 examples/s]Tokenizing train dataset:  79%|███████▉  | 57/72 [00:00<00:00, 194.37 examples/s]Tokenizing train dataset: 100%|██████████| 72/72 [00:00<00:00, 153.45 examples/s]
+Truncating train dataset:   0%|          | 0/72 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 72/72 [00:00<00:00, 2495.14 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  15%|█▍        | 15/101 [00:00<00:00, 135.39 examples/s]Tokenizing eval dataset:  33%|███▎      | 33/101 [00:00<00:00, 145.83 examples/s]Tokenizing eval dataset:  51%|█████▏    | 52/101 [00:00<00:00, 162.03 examples/s]Tokenizing eval dataset:  73%|███████▎  | 74/101 [00:00<00:00, 181.77 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 147.77 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 150.40 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 5429.62 examples/s]
+
+2026-05-22 22:49:23 | schema-linking-baseline-qwen-lora | worker_0 | INFO | worker.py:644 | {'train_runtime': 8.6156, 'train_samples_per_second': 7.428, 'train_steps_per_second': 0.232, 'train_loss': 2.258148670196533, 'num_tokens': 57802.0, 'mean_token_accuracy': 0.6091972887516022, 'epoch': 1.0}
+
+2026-05-22 22:49:23 | schema-linking-baseline-qwen-lora | worker_0 | ERROR | worker.py:646 | Map:   0%|          | 0/64 [00:00<?, ? examples/s]Map: 100%|██████████| 64/64 [00:00<00:00, 1296.06 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3055.77 examples/s]
+Map:   0%|          | 0/101 [00:00<?, ? examples/s]Map: 100%|██████████| 101/101 [00:00<00:00, 3045.14 examples/s]
+Tokenizing train dataset:   0%|          | 0/64 [00:00<?, ? examples/s]Tokenizing train dataset:  23%|██▎       | 15/64 [00:00<00:00, 127.62 examples/s]Tokenizing train dataset:  53%|█████▎    | 34/64 [00:00<00:00, 158.84 examples/s]Tokenizing train dataset:  94%|█████████▍| 60/64 [00:00<00:00, 198.43 examples/s]Tokenizing train dataset: 100%|██████████| 64/64 [00:00<00:00, 153.43 examples/s]
+Truncating train dataset:   0%|          | 0/64 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 64/64 [00:00<00:00, 2115.33 examples/s]
+Tokenizing eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Tokenizing eval dataset:  15%|█▍        | 15/101 [00:00<00:00, 137.91 examples/s]Tokenizing eval dataset:  33%|███▎      | 33/101 [00:00<00:00, 148.42 examples/s]Tokenizing eval dataset:  51%|█████▏    | 52/101 [00:00<00:00, 165.74 examples/s]Tokenizing eval dataset:  73%|███████▎  | 74/101 [00:00<00:00, 184.96 examples/s]Tokenizing eval dataset:  93%|█████████▎| 94/101 [00:00<00:00, 188.54 examples/s]Tokenizing eval dataset: 100%|██████████| 101/101 [00:00<00:00, 152.95 examples/s]
+Truncating eval dataset:   0%|          | 0/101 [00:00<?, ? examples/s]Truncating eval dataset: 100%|██████████| 101/101 [00:00<00:00, 5181.19 examples/s]
+

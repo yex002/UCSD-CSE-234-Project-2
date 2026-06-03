@@ -1,0 +1,166 @@
+2026-05-30 17:39:36 | schema-linking-baseline-qwen-lora_15 | experiment | INFO | experiment.py:104 | An experiment with the same name already exists. Created a new experiment 'schema-linking-baseline-qwen-lora_15' with Experiment ID: 17 and Metric Experiment ID: 89 at /home/duw003/rapidfireai/rapidfire_experiments/schema-linking-baseline-qwen-lora_15
+2026-05-30 17:39:36 | schema-linking-baseline-qwen-lora_15 | experiment | INFO | experiment.py:106 | Running RapidFire AI version 0.15.2
+2026-05-30 17:40:10 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:67 | Found 1 workers/GPUs.
+2026-05-30 17:40:10 | schema-linking-baseline-qwen-lora_15 | controller | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-30 17:40:10 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:95 | Controller initialized
+2026-05-30 17:40:10 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:594 | Set experiment task to Create Models.
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:607 | Saved datasets to /home/duw003/rapidfireai/rapidfire_experiments/schema-linking-baseline-qwen-lora_15/datasets.dill
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:613 | Set seed to 42
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | INFO | metric_rfmetric_manager.py:141 | Created MLflow run: 10caa9adc6be4c70a1aabba6544de4f3, 1
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:200 | Populated MetricLogger with model config info for run 1.
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:220 | Created 1 runs - 
+{   1: {   'additional_kwargs.generation_config.do_sample': False,
+           'additional_kwargs.generation_config.max_new_tokens': 256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.02,
+           'additional_kwargs.generation_config.temperature': None,
+           'additional_kwargs.generation_config.top_p': None,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'Qwen/Qwen2.5-1.5B-Instruct',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.05,
+           'peft_params.r': 8,
+           'peft_params.target_modules': ['q_proj', 'v_proj'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.bf16': True,
+           'training_args.eval_steps': 50,
+           'training_args.eval_strategy': 'steps',
+           'training_args.gradient_accumulation_steps': 8,
+           'training_args.learning_rate': 0.0001,
+           'training_args.logging_steps': 5,
+           'training_args.lr_scheduler_type': 'cosine',
+           'training_args.num_train_epochs': 3,
+           'training_args.per_device_eval_batch_size': 1,
+           'training_args.per_device_train_batch_size': 1,
+           'training_args.save_steps': 100}}
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:223 | Got 1 runs for Initial.
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:227 | Completed creating models.
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:625 | Created models.
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:631 | Set experiment task to Training and Validation.
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:115 | Creating 1 worker processes...
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:121 | Starting worker processes in process group 1505
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:149 | Started Worker 0 with PID 8042
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | worker_manager | INFO | worker_manager.py:156 | Started 1 worker processes successfully
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:637 | Created 1 workers.
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:659 | Starting Training and Validation
+2026-05-30 17:40:11 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-30 17:40:25 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:157 | Worker 0 initialized with PID 8042
+2026-05-30 17:40:25 | schema-linking-baseline-qwen-lora_15 | worker_0 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-30 17:40:25 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:192 | Loaded datasets
+2026-05-30 17:40:25 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 17:40:25 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-30 17:42:25 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:348 | Saved base_model for run Qwen/Qwen2.5-1.5B-Instruct
+2026-05-30 17:42:27 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 0
+2026-05-30 17:43:54 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:0 in-place, 7 new
+2026-05-30 17:43:54 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-05-30 17:43:56 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 0 on workers (0,)
+2026-05-30 17:43:56 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 15/183
+2026-05-30 17:43:56 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 1
+2026-05-30 17:43:56 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 17:43:56 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 1
+2026-05-30 17:44:48 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 1
+2026-05-30 17:45:13 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 17:45:13 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-05-30 17:45:15 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 1 on workers (0,)
+2026-05-30 17:45:15 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 30/183
+2026-05-30 17:45:15 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 2
+2026-05-30 17:45:16 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 17:45:16 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 2
+2026-05-30 17:46:07 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 2
+2026-05-30 17:46:33 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 17:46:33 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-05-30 17:46:35 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 2 on workers (0,)
+2026-05-30 17:46:35 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 45/183
+2026-05-30 17:46:35 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 3
+2026-05-30 17:46:35 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 17:46:35 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 3
+2026-05-30 17:47:26 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 3
+2026-05-30 18:11:21 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 18:11:21 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 3
+2026-05-30 18:11:23 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 3 on workers (0,)
+2026-05-30 18:11:23 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 61/183
+2026-05-30 18:11:23 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:773 | Run 1 has completed epoch (4/4 chunks)
+2026-05-30 18:11:23 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-30 18:11:24 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 18:11:24 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-30 18:12:15 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 0
+2026-05-30 18:12:41 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 18:12:41 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-05-30 18:12:42 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 0 on workers (0,)
+2026-05-30 18:12:42 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 76/183
+2026-05-30 18:12:42 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 1
+2026-05-30 18:12:43 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 18:12:43 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 1
+2026-05-30 18:13:34 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 1
+2026-05-30 18:14:00 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 18:14:00 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-05-30 18:14:01 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 1 on workers (0,)
+2026-05-30 18:14:01 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 91/183
+2026-05-30 18:14:01 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 2
+2026-05-30 18:14:02 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 18:14:02 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 2
+2026-05-30 18:14:53 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 2
+2026-05-30 18:39:30 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 18:39:30 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-05-30 18:39:32 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 2 on workers (0,)
+2026-05-30 18:39:32 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 106/183
+2026-05-30 18:39:32 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 3
+2026-05-30 18:39:32 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 18:39:32 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 3
+2026-05-30 18:40:22 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 3
+2026-05-30 18:40:50 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 18:40:50 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 3
+2026-05-30 18:40:51 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 3 on workers (0,)
+2026-05-30 18:40:51 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 122/183
+2026-05-30 18:40:51 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:773 | Run 1 has completed epoch (4/4 chunks)
+2026-05-30 18:40:51 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-30 18:40:52 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 18:40:52 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-30 18:41:42 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 0
+2026-05-30 18:42:08 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 18:42:08 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-05-30 18:42:10 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 0 on workers (0,)
+2026-05-30 18:42:10 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 137/183
+2026-05-30 18:42:10 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 1
+2026-05-30 18:42:10 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 18:42:10 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 1
+2026-05-30 18:43:01 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 1
+2026-05-30 19:07:47 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 19:07:47 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-05-30 19:07:49 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 1 on workers (0,)
+2026-05-30 19:07:49 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 152/183
+2026-05-30 19:07:49 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 2
+2026-05-30 19:07:50 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 19:07:50 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 2
+2026-05-30 19:08:39 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 2
+2026-05-30 19:09:06 | schema-linking-baseline-qwen-lora_15 | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:448 in-place, 0 new
+2026-05-30 19:09:06 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-05-30 19:09:08 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 2 on workers (0,)
+2026-05-30 19:09:08 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 167/183
+2026-05-30 19:09:08 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 3
+2026-05-30 19:09:09 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-30 19:09:09 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 3
+2026-05-30 19:09:59 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 3
+2026-05-30 19:10:27 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:453 | Saved final checkpoint to disk for run 1 on chunk 3
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 3 on workers (0,)
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:717 | Run 1 completed steps - 183/183
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:760 | Run 1 has completed all its epochs - steps 183/183
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | controller | INFO | controller.py:848 | Scheduler indicates all runs have completed all chunks
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | controller | DEBUG | controller.py:904 | Set experiment task to Idle.
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | worker_0 | INFO | worker_manager.py:50 | Worker 0 process exiting
+2026-05-30 19:10:30 | schema-linking-baseline-qwen-lora_15 | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-30 19:10:32 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-30 19:10:32 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-30 19:10:32 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-30 19:10:32 | schema-linking-baseline-qwen-lora_15 | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-31 00:06:03 | schema-linking-baseline-qwen-lora_15 | schema-linking-baseline-qwen-lora_15 | DEBUG | experiment_utils.py:271 | Reset experiment states and set current experiment task to idle
+2026-05-31 00:06:03 | schema-linking-baseline-qwen-lora_15 | schema-linking-baseline-qwen-lora_15 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-31 00:06:03 | schema-linking-baseline-qwen-lora_15 | schema-linking-baseline-qwen-lora_15 | INFO | metric_mlflow_manager.py:133 | No active MLflow run to clear
+2026-05-31 00:06:03 | schema-linking-baseline-qwen-lora_15 | schema-linking-baseline-qwen-lora_15 | INFO | experiment_utils.py:240 | Experiment schema-linking-baseline-qwen-lora_15 ended
